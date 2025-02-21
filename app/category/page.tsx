@@ -45,20 +45,20 @@ export default function SearchPage() {
   return (
     <div>
       <main>
-        <h1>Search Products</h1>
+        <h1 className="text-red-700 ">Search Products</h1>
 
         {/* Kategorival */}
         <select value={category} onChange={(e) => window.location.search = `?category=${e.target.value}`}>
-          <option value="electronics">Electronics</option>
-          <option value="jewelery">Jewelry</option>
-          <option value="men's clothing">Men's Clothing</option>
-          <option value="women's clothing">Women's Clothing</option>
+          <option className="text-green-700 " value="electronics">Electronics</option>
+          <option className="text-yellow-700 "value="jewelery">Jewelry</option>
+          <option className="text-blue-700 "value="men's clothing">Men's Clothing</option>
+          <option className="text-pink-700 "value="women's clothing">Women's Clothing</option>
         </select>
 
         {/* Sortering */}
         <select value={sortOption} onChange={(e) => handleSort(e.target.value)}>
-          <option value="price-asc">Pris: Lågt till Högt</option>
-          <option value="price-desc">Pris: Högt till Lågt</option>
+          <option className="text-red-700 "value="price-asc">Pris: Lågt till Högt</option>
+          <option className="text-blue-700 " value="price-desc">Pris: Högt till Lågt</option>
         </select>
 
         {/* Produkter */}

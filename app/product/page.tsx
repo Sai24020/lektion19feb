@@ -15,7 +15,7 @@ export default async function ProductPage({
   return (
     <Card>
       <CardHeader>
-        <CardTitle>{data.title}</CardTitle>
+        <CardTitle className="grid justify-items-center text-center">{data.title}</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4 flex">
         <Image
